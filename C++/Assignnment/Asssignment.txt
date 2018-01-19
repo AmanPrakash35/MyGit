@@ -1,0 +1,54 @@
+typdef struct Account
+{
+	char name[ 30 ];
+	int accNumber;
+	float balance;
+}Account_t;
+
+typedef struct Bank
+{
+	char bankName[ 30 ];
+	chat branch[ 30 ];
+	Account_t* arr[ 5 ];
+}Bank_t;
+
+void accept_account_info( Account_t* ptrAccount );
+
+void print_account_info( Account_t* ptrAccount );
+
+void accept_bank_info( Bank_t* ptrBank );
+
+void print_bank_info( Bank_t* ptrBank );
+
+int create_account( Bank_t* ptrBank );	//Return account number
+
+int delete_account( Bank_t* ptrBank, int accNumber );	//Return 1 if deleted else 0
+
+float deposit( Bank_t* ptrBank, int accNumber, float amount );	//Return updated balance
+
+float withdraw( Bank_t* ptrBank, int accNumber, float amount ); //Return updated balance
+
+int fund_transfer( Bank_t* ptrBank, int srcAccNumber, int destAccNumber, float amount ); 
+//Return transfer status
+
+void write_record( Bank_t* ptrBank );	//Save account info in file "accounts.db"
+
+void read_record( Bank_t* ptrBank );	//Load account info from file "accounts.db"
+
+Write a menu driven program using above details and perform following operations:
+
+1. Create New Account.
+
+2. Depost Amount
+
+3. Withdraw Amount
+
+4. Transfer Fund
+
+5. Delete Account
+
+6. Save accounts
+
+7. Load accounts
+
+
