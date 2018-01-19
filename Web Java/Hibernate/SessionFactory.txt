@@ -1,0 +1,13 @@
++ SessionFactory
+
+1.Single Data Store : – It is single data store for your whole application. Although you can have multiple SessionFactory but each SessionFactory will have one different database associated with it.
+
+2.Thread Safe : – SessionFactory is thread safe so due to this feature many thread can access the SessionFactory.
+
+3.Immutable : - Once the SessionFactory's object is created you can not change or set the values of Session Facotyr. Its internal state is set at the time of creation.
+
+4.Singleton : – SessionFactory is built at the time of application startup and it follows the singleton design pattern.
+
+So in short, SessionFactory objects are one per application and Session objects are one per client. 
+
+

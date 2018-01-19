@@ -1,0 +1,11 @@
++ Servlet
+	- Applet is java class which runs in web browser memory
+	- Servlet is java class which runs in Web Server memory
+	- Servlet = Java class( Java Source Code + html code )
+	- It is dynamic component of Java EE application whose job is:
+			1. Request processing
+			2. Handling Business logic
+			3. Taking care of page navigation( sendRedirect, forward, include )
+			4. Response generation
+			5. Managing DAO layer
+

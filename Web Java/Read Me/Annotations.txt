@@ -1,0 +1,98 @@
++ Metadata:
+	- data about data is called metadata.
+	- Till now, if we want to associate metadata with source code then we have used marker 		    	  interfaces.	
+	- JDK 1.5 introduced the concept of Annotations.
+	- Using Annotation we can add metadata in source code. It removes the need of marker 	  	    	  interfaces.
+	- Annotations have a number of uses, among them:
+		* Information for the compiler :
+		  Annotations can be used by the compiler to detect errors or suppress warnings.
+		* Compile-time and deployment-time processing:
+			Software tools can process annotation information to generate code, XML files etc.
+		* Runtime processing:
+			Some annotations are available to be examined at runtime.
+
+	- Annotation is interface which always starts with @
+	- Following java annotations we use in java source code.		
+		@Deprecated						--> 1.5
+		@FunctionalInterface	--> 1.8
+		@Override							--> 1.5
+		@SafeVarargs					--> 1.7	
+		@SuppressWarnings			--> 1.5
+
+	- We can apply annotations for following elements
+		* Types[ class,interace and enum ]
+		* parameter
+		* local variable
+		* field
+		* constructor
+		* methods
+		* annotation types  
+	
+	- Following are the annotation that can be apply on other annotations
+		@Target						
+		@Retention
+		@Repeatable	--> 1.8		
+		@Inherited		
+		@Documented				
+
++ @Target	
+	- @Target annotation marks another annotation to restrict what kind of Java elements the  			annotation can be applied to.
+
+	- A target annotation specifies one of the following element types as its value:
+		* ElementType.ANNOTATION_TYPE	: can be applied to an annotation type.
+		* ElementType.CONSTRUCTOR 		: can be applied to a constructor.
+		* ElementType.FIELD 					: can be applied to a field or property.
+		* ElementType.LOCAL_VARIABLE 	: can be applied to a local variable.
+		* ElementType.METHOD 					: can be applied to a method-level annotation.
+		* ElementType.PACKAGE 				: can be applied to a package declaration.
+		* ElementType.PARAMETER 			: can be applied to the parameters of a method.
+		* ElementType.TYPE						: can be applied to interface, class and enum
+
++ @Retention
+	- It is used to specify at what level annotation will be available.	
+	- RetentionPolicy.SOURCE
+		The marked annotation is retained only in the source level and is ignored by the compiler.
+	- RetentionPolicy.CLASS
+		The marked annotation is retained by the compiler at compile time, but is ignored by the 			Java Virtual Machine (JVM).
+	- RetentionPolicy.RUNTIME
+		The marked annotation is retained by the JVM so it can be used by the runtime environment.
+
++ @Repeatable
+	- @Repeatable annotation, introduced in Java SE 8, indicates that the marked annotation can be 		  applied more than once to the same declaration.
+
++ @Inherited
+	- @Inherited annotation indicates that the annotation type can be inherited from the super 			class.
+
++ @Documented
+	- @Documented annotation indicates that whenever the specified annotation is used those 	elements should be documented using the Javadoc tool.
+
++ Java Custom Annotations
+	- Consider the following points while defining custom annotations.
+		* Method should not have throws clause
+		* Method should return value of one of the following 
+			# primitive type
+			# String
+			# class
+			# enum
+			# array of above types.
+		* Method should not have any parameter
+
++ Types of annotations:
+	1. Marker annotation
+		e.g @interface Entity{	}
+
+	2. Single value annotation
+		e.g @interface Table
+		    {
+						String name();
+	      }
+	3. Multi value annotation
+		e.g. @interface column
+		     {
+						String name();
+						int length();
+		     }
+
+
+
+

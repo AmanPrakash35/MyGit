@@ -1,0 +1,54 @@
++ SessionFactory
+	- It is an interface declared in org.hibernate package.
+	- It is immutable and singleton Object created per database.
+	- Methods:
+		* Session getCurrentSession( )throws HibernateException
+		* Session openSession() throws HibernateException
+		* void close()throws HibernateException
+
+
+
+
++ Session	
+	- It is an interface declared in org.hibernate package.
+
+	- It is main runtime interface between a Java application and Hibernate.
+
+	- The main function of the Session is to offer create, read and delete operations for 		  instances of mapped entity classes.
+
+	- Entity Instances may exist in any one of three states:
+		* transient
+			# never persistent, not associated with any Session
+			# Transient instances may be made persistent by calling save(),persist() or saveOrUpdate().
+
+		* persistent
+			# associated with a unique Session
+			# Persistent instances may be made transient by calling delete().
+			# Any instance returned by a get() or load() method is persistent
+			# Changes to persistent instances are detected at flush time
+
+
+		* detached
+			# previously persistent, not associated with any Session
+			# Detached instances may be made persistent by calling update(),saveOrUpdate(), lock() or replicate().
+
+			# The state of a transient or detached instance may also be made persistent as a new persistent instance by calling merge().
+	
+	- save() and persist() result in an SQL INSERT.
+	- delete() in an SQL DELETE and
+	- update() or merge() in an SQL UPDATE
+	- Methods of Session interface:
+		* Serializable save(Object object)
+		* void persist(Object object)
+		* void delete(Object object)
+		* void update(Object object)
+		* Object merge(Object object)
+		* void saveOrUpdate(Object object)
+		* <T> T get(Class<T> entityType,Serializable id)
+		* void load(Object object,Serializable id)
+		* void evict(Object object)
+		* void clear()
+
+		
+		
+

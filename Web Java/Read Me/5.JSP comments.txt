@@ -1,0 +1,10 @@
+1.server side comment
+	- syntax : <%-- comment text --%>
+
+	- JSP translator & compiler ignores the commented text.
+
+2 client side comment
+	- syntax : <!-- comment text -->
+	
+	- JSP transalator & compiler does not ignore the commented text but client browser 		  will ignore it.
+

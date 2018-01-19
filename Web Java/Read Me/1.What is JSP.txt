@@ -1,0 +1,14 @@
++ What is JSP?
+	- JSP is specification defined by Oracle/Sun.
+	
+	- Apache-tomcat has implemented it into tomcat/lib/jsp-api.jar file.
+	
+	- Servlet = Java code + html code
+
+	- JSP = Html code  + java code
+
+	- JSP is dynamic web component which is managed by web container( JSP Container ).
+	
+	- Name of JSP container is Jasper
+	
+

@@ -1,0 +1,37 @@
++ If we want to give instructions to the Web Container then we should use directives.
+
++ Syntax:  <%@ directive attribute=value %>
+
++ There are three directives in JSP.
+
+	- page directive
+		* It is used to control servlet translation.
+		* e.g <%@ page language="java" %>
+	- include directive
+		* It is used to add .html or .jsp file statitically.
+		* e.g <%@ include file="..."%>
+	- taglib directive
+		* It is required to use third party or custom tags.
+		
+
++ Page directive:
+	- It defines page specific properties.
+
+	- Attributes of page directive:
+		* language : defines the scripting language used in scriptlets and expression
+
+		* contentType : defines content/MIME type
+
+		* import : defines java import statements
+
+		* isErrorPage : to define error page
+
+		* errorPage : defines the URL to resource to which uncaught exception should be 			      sent.
+
+		* session : defines whether the page will have an implicit session object.
+
+		* isThreadSafe : defines whether the translated servlet needs to implement 			 		 SingleThreadModel. Default value is true means it is already thread safe do not apply thread safty.
+
++ include directive:
+	- <%@ include file="URI of file"%>
+	

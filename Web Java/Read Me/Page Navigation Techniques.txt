@@ -1,0 +1,11 @@
++ Page Navigation Techniques
+	- Navigating page means taking client from one page to another page.
+
+	- Client can be navigated to another page in new request due to user interaction or Redirect 		 scenario. It is called client pulling.
+
+	- Client can be navigated to another page in same request using RequestDispatcher. It is 			   called server pulling.
+  - RequestDispatcher object is used to chain the resources i.e. Servlet and JSP
+		* RequestDispatcher Scenario:
+			1.forward
+
+			2.include			

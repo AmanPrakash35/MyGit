@@ -1,0 +1,29 @@
++ Apache tomcat
+	- Apache is a foundation and tomcat is product.
+
+	- tomcat is a web server. It implements JEE specification.
+
+	- We are going to use tomcat 8.0 version.
+
+	- Apache tomcat installation directory.
+		 * bin  - Startup and shutdown scripts
+
+		 * conf - Server configuration files (including server.xml)
+
+		 * lib  - Libraries( .jar ) which contains implementation of JEE specification.
+
+		 * logs - Log and output files
+
+		 * webapps - Hot deployment directory. It is used to deploy the web application.
+
+		 * work - Temporary working directories for web applications. Conitains intermediate files 				 that are created during execution of web application.
+
+		 * temp - Directory used by the JVM for temporary files.
+
+	- To start tomcat server give "./catalina.sh run" command:
+	  Example : /home/sandeep/apache-tomcat-8.0.36/bin#./catalina.sh run
+
+	- To shutdown tomcat server give "./shutdown.sh" command:
+	  Example : /home/sandeep/apache-tomcat-8.0.36/bin#./shutdown.sh
+
+	- To test the tocat server type "http://localhost:8080/" in browser window and press 			  		enter key.

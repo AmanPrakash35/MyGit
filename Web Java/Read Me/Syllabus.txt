@@ -1,0 +1,7 @@
++ Session 1
+	- Introduction of JDBC API
+	- JDBC Architecture
+	- Drivers, Connection, Statement and Result Set interfaces and their relationship to
+	  provider implementations
+	- Writing Database Application
+-----------------------------------------------------------------------------------------	

@@ -1,0 +1,33 @@
++ Hibernate Advantages
+	- Hibernate takes care of mapping Java classes to database tables using XML files or annotation.
+
+
+	- Provides simple API for storing and retrieving Java objects directly to and from the database.
+
+
+	- If there is change in Database or in any table then the only need to change XML  file properties.
+
+
+	- Hibernate does not require an application server to operate.	 
+
+
+	- Manipulates Complex associations of objects of your database.
+
+
+	- Minimize database access with smart fetching strategies.
+
+
+	- Provides Simple querying of data.
+
+
++ Supported Databases:
+	- MySQL
+	- Oracle
+	- PostgreSQL etc.
+
+* Java EE Supports Hibernate framework.
+
+
+
+
+

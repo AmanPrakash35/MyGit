@@ -1,0 +1,27 @@
++ Object Relational Mapping( ORM )
+	- ORM is programming technique for converting data between relational databases and 		  object oriented programming lanaguages.
+
+		Db Domain			OO Domain
+		-------------------------
+		Table					class
+		Column				field
+		Record/row		instance
+		primary key		identity field
+		
+
+	-  An ORM system has following advantages over plain JDBC
+		* Lets business code access objects rather than DB tables.
+		* Hides details of SQL queries from OO logic.
+		* No need to deal with the database implementation.
+		* Transaction management and automatic key generation.
+		* Fast development of application.
+		
++ Java ORM Frameworks:
+	- Hibernate 
+	- Toplink
+	- EclipseLink
+	- Castor
+	- Apache OpenJPA
+	- DataNucleus
+	- ObjectDB
+

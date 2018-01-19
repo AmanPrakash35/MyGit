@@ -1,0 +1,62 @@
++ HTTP:
+	- HTTP stands for HyperText Transfer Protocol.
+	- It is Stateless protocol. 
+	- It is designed to enable communications between clients and servers.
+	- HTTP works as a request-response protocol between a client and server.
+	- Web browser may be the client, and an application on a computer that hosts a web site 	  		may be the server.
+
+
+Http Request:
+	- From client to server.
+	- What is contains:
+		* Host information.( IP Address and port number )
+		* HTTP Request method( GET, POST )
+		* HTTP Request header.
+		* Request body.
+		* cookies
+
+Http Response:
+	- From server to client
+	- What is contains:
+		* Protocol version information
+		* Http Status code
+		* Resposne header.
+		* Resonse body.
+		* cookies.
+		* Content Type/MIME Type( Multipurpose Internet Mail Extensions )
+			text/html
+			text/plain
+			text/xml
+
+			application/msword
+			application/jar
+			application/pdf
+
+			images/jpeg
+			images/png
+			images/gif
+
+			audio/mp3
+			video/mp4
+
+
++ HTTP Request Methods:	
+	- GET	
+	- POST
+	- PUT
+	- DELETE
+	- HEAD	
+	- OPTIONS
+  - TRACE
+	- CONNECT
+	- PATCH
+
+
+
+
+
+
+
+
+
+

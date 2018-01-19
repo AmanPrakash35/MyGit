@@ -1,0 +1,32 @@
+JSP life cycle:
+
+1. Client sends the first request to the JSP.
+
+2. Web Container[ Servlet & JSP Container ] handles the life cycle for JSP
+
+3. Translation Phase : handled by the Web( JSP ) container.
+   Input : Index.jsp  Output : Index_jsp.java.
+   Web Container converts .jsp page into servlet page(.java)
+   It also checks translation time errs i.e JSP syntax errors.
+   In case of errors, life-cycle is aborted.
+
+4. Compilation Phase : handled by the Web ( JSP ) container.
+   Input : servlet page(.java)   Output : Compiled servlet class(.class)
+   It also checks syntactical errors in translated servlet.
+
+5. Request processing phase: handled by Web( Servlet ) Container.
+	* Web Container will try to locate,load,instantiate the generated servlet class.
+	  [ Only once per servlet ]	
+
+	* First it calls "public void jspInit()" method.
+	  [ Only once per servlet ]
+
+6.	Then it will call "public void _jspService(HttpServlet Rq,HttpServletResponse)" method using 		  thread created per client request.
+
+7. Destruction Phase : Handled by Web Container.
+   At the end Web Container calls "public void jspDestroy()" method.
+
+8 For second request onwards web container will invoke step 6 onwards.
+
+
+

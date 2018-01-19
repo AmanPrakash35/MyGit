@@ -1,0 +1,19 @@
+JSP's implicit objects 
+
+1 out 		- 	javax.servlet.jsp.JspWriter
+
+2 request 	-	HttpServletRequest
+
+3 response 	-	HttpServletResponse
+
+4 config 	-	ServletConfig
+
+5 session	-	HttpSession
+
+6 exception 	-	java.lang.Throwable
+
+7 pageContext  	-	javax.servlet.jsp.PageContext
+
+8 application 	-	ServletContext
+
+9 page		-	current servlet object created for 'this' JSP 

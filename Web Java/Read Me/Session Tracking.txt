@@ -1,0 +1,123 @@
++ Session
+	- Coversation between client and server is called as session.
+	
+	- Conversation consists of series of continuous request and response.
+
+	- HTTP protocol and Web Servers are stateless, what it means is that for web server 		  every request is a new request to process and they can’t identify if it’s coming from 	  client that has been sending request previously.
+
++ Need of session tracking:
+	- To identify client in multiple requests.
+	- To remember conversational state among multiple request.
+
++ Session tracking methods Java:
+	- Client side state management
+		* Cookies
+		* HTML Hidden Field
+		* URL Rewriting
+	- Server side state management
+		* HttpSession Object
+
+
++ Cookie:
+	- Cookie is a small amount of information sent by a Web Server[ servlet or jsp ] to a 		  Web browser, saved by the browser, and later sent back to the server.
+
+	- A cookie's value can uniquely identify a client, so cookies are commonly used for 		  session management. 
+
+	- Cookie represents data shared across multiple dynamic pages from the same web 		application
+
+	- Every cookie has name and single value.
+
+	- The servlet sends cookies to the browser by using:
+		 " HttpServletResponse.addCookie(Cookie cookie) " method,
+		 which adds fields to HTTP response headers to send cookies to the browser
+
+	- The browser returns cookies to the servlet by adding fields to HTTP request headers. 		  Cookies can be retrieved from a request by using the "HttpServletRequest.getCookies()" 		  method. 
+
+	- The browser is expected to support 20 cookies for each Web server, 300 cookies total, 	  and may limit cookie size to 4 KB each.
+
+	- Several cookies might have the same name but different path attributes. 
+
+	- By default, cookies are created according to the Netscape cookie specification.
+
+	- To create cookie, we should use javax.servlet.http.Cookie class.
+
+	- Methods of Cookie:
+		* public Cookie(String name, String value)	//Constructor
+		* public String getName()
+		* public String getValue()
+		* public int getMaxAge()
+		* public void setMaxAge(int expiry)
+			
+		# if expiry > 0 
+		  then cookie will expire after that many seconds have passed.
+
+		# if expiry < 0
+		 then cookie is not stored persistently and will be deleted when the Web browser 			 exits.
+
+		# if expiry == 0
+		 then it causes the cookie to be deleted.
+	
+	- Types of cookies:
+		* Persistent Cookie.
+		* Non Persistent Cookie.
+
+	- Steps to add Cookie
+		Cookie c = new Cookie("UserName","Sandeep");
+		response.addCookie( c );
+		//void addCookie(Cookie cookie) : is method of HttpServletResponse interface
+
+	- Steps to get Cookie
+		Cookie[] cookies = request.getCookies();
+		//Cookie[] getCookies() : is a method of HttpServletRequest interface
+		
+ 	- Disadvantages of Cookie:
+		* It can handle only text data.( Check Cookie constructor )
+		* If number of cookies increased then it may increase network trafic.
+		* If browser rejects the cookie then session tracking may fail.
+	
++ HTML Hidden Field:
+	- It is invisible text field used for maintaining state of the object.
+
+	 - Example : out.println("<input type='hidden' name='UserName' value='"+name+"'>");
+	- Advantage:
+		* It will always work whether cookie is enabled or disabled.
+	- Disadvantage:
+		* It can handle only text data.
+		* This method can’t be used with links because it needs the form to be submitted 			  every time request is made
+
++ URL Rewriting:
+	- With URL ReWriting, we can append conversational state at the end of URL.
+	- Example : URL?name=value && name=value;
+	- Advantages:		
+		* It will always work whether cookie is enables or disabled.
+	  * Extra form submission is not required on each pages.
+	- Disadvantages:
+		* It can handle only text data.
+		* It works with links only.
+
+
+
++ HttpSession:
+	- It is interface which is declared in javax.servlet.http package.
+	- This interface allows servlets to :
+		* View and manipulate information about a session, such as the session identifier, creation 		  time, and last accessed time.
+		* Bind objects to sessions, allowing user information to persist across multiple  user connections.
+	- Methods of HttpSession Interface:
+		* void setAttribute(String name, Object value);
+		* Object getAttribute(String name)
+		* void removeAttribute(String name)
+		* void invalidate()
+		* boolean isNew()
+		* String getId()
+	- Using "HttpServletRequest.getSession()" we can create HttpSession Object.
+		* HttpSession getSession()
+			# Returns the current session associated with this request, or if the 				  request does not have a session, creates one.
+
+		* HttpSession getSession(boolean create)
+			# Returns the current HttpSession associated with this request.
+			# if there is no current session and create is true, returns a new 				  session.
+			# If create is false and the request has no valid HttpSession, this 				  method returns null. 
+	- JSESSIONID Cookie:
+		* When we use "HttpServletRequest getSession()" method and it creates a new 			  request, it creates the new HttpSession object and also add a Cookie to the 			  response object with name JSESSIONID and value as session id. This cookie is 			  used to identify the HttpSession object in further requests from client.
+		* If the cookies are disabled at client side and we are using URL rewriting then 			  this method uses the jsessionid value from the request URL to find the 			  corresponding session.
+		* JSESSIONID cookie is used for session tracking, so we should not use it for 			  our application purposes to avoid any session related issues.

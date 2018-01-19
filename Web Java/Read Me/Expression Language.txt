@@ -1,0 +1,75 @@
+Expression Language(EL):
+	- It is alternative given for JSP expression.
+	- Syntax : ${ expression }
+	- It is available from JSP 1.2 and onwards.
+	- EL Implicit Objects( 11 )
+		* pageScope		=> It is map of page scope attribute
+		* requestScope		=> It is map of request scope attribute
+		* sessionScope		=> It is map of session scope attribute
+		* applicationScope	=> It is map of application/context scope attribute
+	
+		* param			=> It is map of request parameters
+		* paramValues
+	
+		* header		=> It is map of request header.
+		* headerValues
+
+		* cookie		=> It is map of cookies.
+		* initParam		=> It is map of context init paramaters.
+
+		* pageContext		=> It is not a map. It is reference of PageContext obj.
+------------------------------------------------------------------------------------
+
+"Second.jsp"
+	<%
+		pageContext.setAttribute("Name_Page", request.getParameter("txtName"));
+		request.setAttribute("Name_Request", request.getParameter("txtName"));
+		session.setAttribute("Name_Session", request.getParameter("txtName"));
+		application.setAttribute("Name_Application", request.getParameter("txtName"));
+		
+		RequestDispatcher rd = request.getRequestDispatcher("Third.jsp");
+		rd.forward(request, response);
+	%>
+	
+
+"Third.jsp"
+	Name Via Page : <%= pageContext.getAttribute("Name_Page") %><br/>
+	Name Via Page:EL : ${pageScope.Name_Page}<br/>
+	<hr/>
+	Name Via Request : <%= request.getAttribute("Name_Request") %><br/>
+	Name Via Request:EL : ${requestScope.Name_Request}<br/>
+	<hr/>
+	Name Via Session : <%= session.getAttribute("Name_Session") %><br/>
+	Name Via Session:EL : ${sessionScope.Name_Session}<br/>
+	<hr/>
+	Name Via Application : <%= application.getAttribute("Name_Application") %><br/>
+	Name Via Application:EL : ${applicationScope.Name_Application}<br/>
+
+
+or
+
+"Third.jsp"
+	Name Via Page : <%= pageContext.getAttribute("Name_Page") %><br/>
+	Name Via Page:EL : ${Name_Page}<br/>
+	<hr/>
+	Name Via Request : <%= request.getAttribute("Name_Request") %><br/>
+	Name Via Request:EL : ${Name_Request}<br/>
+	<hr/>
+	Name Via Session : <%= session.getAttribute("Name_Session") %><br/>
+	Name Via Session:EL : ${Name_Session}<br/>
+	<hr/>
+	Name Via Application : <%= application.getAttribute("Name_Application") %><br/>
+	Name Via Application:EL : ${Name_Application}<br/>
+------------------------------------------------------------------------------------
+if we write ${name} then
+	pageContext.getAttribute("name") != null ? return string to client : check in above scope
+	request.getAttribute("name") != null ? return string to client : check in above scope
+	session.getAttribute("name") != null ? return string to client : check in above scope
+	application.getAttribute("name") != null ? return string to client : return blank.
+------------------------------------------------------------------------------------
+
+
+	User Details : <%  User user = (User)session.getAttribute("UserDetails"); out.println(user.getEmail()); %> <br/>	
+	User Details : <%= ((User)session.getAttribute("UserDetails")).getEmail() %> <br/>
+	User Details : ${sessionScope.UserDetails.email} <br/>
+	User Details : ${UserDetails.email} <br/>

@@ -1,0 +1,16 @@
++ Java Bean:
+	- It is reusable component that we can share accross multiple pages.
+	- It is used to seperate business logic form presentation logic(.jsp).
+	- Web Container automatically translates String based request parameters into primitive  	   java bean properties.
+
++ Java Bean Specification:
+	- It must be packaged public class.
+	- It must have default constructor.
+	- Fields must be private, non static and non transient.
+	- For private field getter and setter should be exist.[ Using Camel Case Conv. ]
+	- It can cotain business logic methods.
+
++ Roles of Java Bean
+	- Storing conversational state of the client.
+	- Suplying business logic.
+

@@ -1,0 +1,34 @@
+	<c:forEach var="count" begin="1" end="10">
+		<c:out value="${count}"/>
+	</c:forEach>
+
+
+	
+
+	<%
+		List<Integer> list = Arrays.asList(10,20,30,40,50);
+		session.setAttribute("IntList", list);
+	%>
+	<c:forEach var="element" items="${IntList}">
+		<c:out value="${element}"/>
+	</c:forEach>
+
+
+	<c:set var="UserName" value="${param.userName}" scope="session"/>
+	<c:out value="${UserName}"/>
+
+
+<c:set var="Gender" value="false"/>
+	<c:choose >
+		<c:when test="${Gender}">
+			<c:out value="Male"/>
+		</c:when>
+		<c:otherwise>
+			<c:out value="FeMale"/>
+		</c:otherwise>
+	</c:choose>
+
+
+<c:forTokens var="token"  delims="." items="www.sunbeaminfo.com">
+		<c:out value="${token}"/><br/>
+</c:forTokens>

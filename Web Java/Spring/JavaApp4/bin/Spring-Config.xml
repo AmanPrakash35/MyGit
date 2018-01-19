@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<!-- Dependant -->
+	<bean id="myAtm" class="dependant.AtmImplementation">
+		<property name="transport" ref="text"/>
+	</bean>
+	
+	<!-- dependancy -->
+	<bean id="text" class="dependancy.TextTransport" scope="prototype" lazy-init="false"/>
+	<bean id="http" class="dependancy.HttpTransport" scope="prototype"/>
+	<bean id="soap" class="dependancy.SoapTransport" scope="prototype"/>
+</beans>

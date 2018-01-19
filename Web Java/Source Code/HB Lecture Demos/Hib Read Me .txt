@@ -1,0 +1,84 @@
+getCurrentSession vs openSession
+
+public Session openSession() throws HibernateExc
+opens new session from SF,which has to be explicitely closed by prog.
+
+public Session getCurrentSession() throws HibernateExc
+Opens new session , if one doesn't exist , otherwise continues with the exisitng one.
+Gets automatically closed upon Tx boundary or thread over(since current session is bound to current thread --mentioned in hibernate.cfg.xml property ---current_session_context_class ---thread)
+
+
+Difference in get & load
+1. Both use common API (i.e load or get(Class c,Serializable id))
+Ret type = Object
+In get --- if id doesn't exist --- rets null
+In load --- if id doesn't exist & u are accessing it from within hib session --- throws ObjectNotFoundExc
+2. In get --- Hibernate uses eager fetching policy ---- meaning will generate select query always & load the state from DB in persistent POJO ref. --- so even if u access the same from within the session(persistent pojo)  or outside (detached) the hib session --- NO EXCEPTION(proxy + state)
+
+3. In load --- Hib uses lazy fetching policy ---- meaning it will , by default NOT generate any select query --- so what u have is ONLY PROXY(wrapper ---with no state loaded from DB) --- on such a proxy --- if u access anything outside the hib session(detached) ---- 
+U WILL GET ---LazyInitializationExc 
+Fix --- 1. Change fetch type --- to eager (NOT AT ALL reco.=> no caching , disabling L1 cache) 
+2. If u want to access any POJO in detached manner(i.e outside hib session scope) -
+fire non-id get method from within session & then hib has to load entire state from DB ---NO LazyInitializationExc 
+
+
+
+1. persist --- 
+public void persist(Object transientRef)
+
+if u give some non-null id while calling persist(ref) --gives exc
+org.hibernate.PersistentObjectException: detached entity passed to persist: 
+
+2. save --- if u give some non-null id while calling save(ref) --doesn't give any exc.
+Ignores ur passed id & creates its own id & inserts a row.
+
+3. saveOrUpdate
+null id -- fires insert (works as save)
+non-null BUT existing id -- fires update (works as update)
+non-null BUT non existing id -- throws StaleStateException --to indicate that  we are trying to delete or update a row that does not exist.
+
+
+
+
+Session API update Vs merge
+Both methods transition detached object to persistent state.
+
+5. update
+Session API
+public void update(Object object)
+
+Update the persistent instance with the identifier of the given detached instance.
+
+I/P --detached POJO containing updated state.
+Same POJO becomes persistent.
+ 
+Exception associated : 
+1. org.hibernate.TransientObjectException: The given object has a null identifier:
+i.e while calling update if u give null id. (transient ----X ---persistent via update)
+
+2. org.hibernate.StaleStateException --to indicate that  we are trying to delete or update a row that does not exist.
+
+3.
+org.hibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session
+
+
+
+6. public Object merge(Object ref)
+Can Transition from transient -->persistent & detached --->persistent.
+
+Regarding Hibernate merge
+1. The state of a transient or detached instance may also be made persistent as a new persistent instance by calling merge().
+
+2. API of Session
+Object merge(Object object)
+
+3.
+Copies the state of the given object(can be passed as transient or detached) onto the persistent object with the same identifier. 
+
+3.If there is no persistent instance currently associated with the session, it will be loaded. 
+
+4.Return the persistent instance. If the given instance is unsaved, save a copy of and return it as a newly persistent instance. The given instance does not become associated with the session.
+
+5. will not throw NonUniqueObjectException --Even If there is already persistence instance with same id in session.
+
+

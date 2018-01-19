@@ -1,0 +1,13 @@
+What is need of Java server pages?
+
+1. JSP allows developer to separate presentation logic from Business logic and data manipulation logic.
+	In context of JSP:
+	- JSP : should contain presentation logic.
+	- Java Beans : should contain business logic.
+	- Dao : should contain data manipulation logic.
+
+2. It simplifies the development.
+	Web Container automatically converts JSP into Servlets. It Compiles servlet and 	deploy automatically.	
+
+3. For faster development we can use tools/IDE. 
+

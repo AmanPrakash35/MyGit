@@ -1,0 +1,8 @@
++ Web container
+	- Server side JVM residing within web server.
+	- It is runtime environment for dynamic web components(e.g Servlet & JSP ). 
+	- Job of WC. :
+		* Creating Http Request & Http response objects. 
+		* Controlling life-cycle of servlet,JSP and Filters.
+		* Giving ready-made support for services like Naming,security,Conn pooling.
+	

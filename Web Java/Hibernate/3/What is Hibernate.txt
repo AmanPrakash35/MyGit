@@ -1,0 +1,8 @@
+1. Hibernate is an ORM solution for JAVA .
+
+2. It is an open source persistent framework created by Gavin King in 2001.
+
+
+3. Hibernate maps Java classes to database tables and from Java data types to SQL data 	  	  types. It relieve the developer from common data persistence related programming tasks.
+
+4. Hibernate plays role in between Java objects and databases to handle all the work in persisting those objects based on the appropriate O/R mechanisms.

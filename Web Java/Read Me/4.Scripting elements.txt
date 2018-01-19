@@ -1,0 +1,15 @@
+Scripting elements
+
+It is required to make jsp's dynamic. we can add java code in it.
+
+1 Scriptlets
+	syntax : <% java code...... %>
+
+2 JSP expressions : 
+	syntax : <%= expr to evaluate %>
+
+3. JSP declarations :
+	syntax : <%!  field or method declaration %>
+
+4. Directive
+	syntax : <%@ ... %>

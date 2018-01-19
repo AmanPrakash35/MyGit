@@ -1,0 +1,46 @@
++ Java EE:
+	- Current Java EE version is 1.7
+	- Java EE is a specification defined by Oracle/Sun.
+	- Java EE specification :
+		* Servlet
+		* JSP
+		* JPA
+	- Implementing Java EE specification is a job of Web Server and Application Server.
+	
++ Web Server:
+	- It contains Web container and some extra services.
+		Web Container = Servlet container + JSP Container;
+	 	Extra Services = Connection Pooling + JNDI
+	- It is responsible for taking care of presentation logic.
+	- Apache Tomcat is Java EE complaint Web Server.
+
+
++ Application Server:
+	- It contains Web Container as well as EJB container.
+	- It is responsible for taking care of business logic.
+	- Following are the Application Server:
+		* Glassfish 				--> 	Oracle / Sun
+		* Tomee 						--> 	Apache
+		* JBoss (wild fly)	--> 	Red Hat 
+		* weblogic	 				--> 	Oracle / BEA 
+		* Websphere	 				--> 	IBM 
+
+
++ Why to use Java EE?
+	- Java EE can support different types of clients. For example thin client, thick client 	  		and smart client.
+	  * thin client		-->	Web browser.
+		* thick client	-->	Desktop application.
+		* smart client	-->	Mobile application.
+
+
+	- Java EE gives us server independance.
+		* We can create and deploy web application on any Java EE complaint server.
+		* Guaranteed to produce same results on any other Java EE server.
+	
+	- Java EE has provided implementation of primary services.
+		* Connection Pooling
+		* Security
+		* Email etc.
+  	so Instead of worrying about these services developer can focus on business logic.
+	
+

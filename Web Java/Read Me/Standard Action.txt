@@ -1,0 +1,48 @@
++ JSP Standard Actiions.
+	- If JSP page contains minimum scriplets or expression then it is considered as good JSP 	  page. So we should avoid it in JSP. 
+	- To minimize scriplets of JSP, we should tags( It is also called actions ):
+		* Standard tag
+		* Third party tag
+		* Custom tag
+	- JSP's Standard tag:	
+		* jsp:useBean
+		* jsp:setProperty
+		* jsp:getProperty
+		* jsp:forward
+		* jsp:include
+
++<jsp:useBean>
+	- If we want to locate or instantiate bean class then we should use it.
+	- Syntax : 
+		<jsp:useBean 
+			id="bean unique id" 
+			class="Fully Qualified Bean class name" 
+			scope="page|request|session|application"
+		/>
+	- if we do not specify the scope then default scope is page.
+	
+	- e.g <jsp:useBean id="ub" class="beans.UserBean" scope="session"/>
+		above statement is equivalent to:
+		if : session.getAttribute("ub") == null 
+		then :  UserBean bean = new UserBean();
+		 	session.setAttribute("ub",bean);
+
+		else : return refrence of bean instance.
+				
+
++<jsp:setProperty>
+	- <jsp:setProperty name="bean id" property="prop name" value="fix value"/>
+		<jsp:setProperty name="ub" property="userName" value="sandeep"/>
+
+
+	- <jsp:setProperty name="bean id" property="prop name" param="reqParamName"/>
+		<jsp:setProperty name="ub" property="userName" param="txtUserName"/>
+
+	- <jsp:setProperty name="bean id" property="prop name"/>
+		<jsp:setProperty name="ub" property="userName"/>
+
+	- <jsp:setProperty name="bean id" property="*"/>
+
+
++<jsp:getProperty>
+	- <jsp:getProperty name="bean id" property="propName"/>

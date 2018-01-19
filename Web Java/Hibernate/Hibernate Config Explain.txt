@@ -1,0 +1,48 @@
+1. hibernate.connection.driver_class 
+		- The JDBC Driver class
+		- com.mysql.jdbc.Driver
+
+2. hibernate.connection.url 
+	 - JDBC url to the database instance
+	 - jdbc:mysql://localhost:3306/HibDB
+
+3. hibernate.connection.username
+	 - The database username
+	 - root
+
+4. hibernate.connection.password
+	 - The database password
+	 - manager
+
+5. hibernate.dialect
+	 - To generate appropriate SQL for choosen database
+	 - org.hibernate.dialect.MySQLDialect
+
+6. hibernate.connection.autocommit
+	 - allows autocommit mode to be used for the JDBC connection.
+	 - false
+
+7. hibernate.connection.pool_size
+	 - Limits the number of connection waiting in the hibernate database connection pool.
+	 - 2
+
+8. hibernate.current_session_context_class
+	 - When we create hibernate session using sessionFactory.openSession() method, the session     	    factory will bind the session to the current context. 
+	 - Possible values : jta, thread and managed
+	 - The default context is thread. It means that session factory will bind the session to the 		   the thread.
+
+9. hibernate.show_sql
+	 - Enable logging of all the generated SQL statements to the Console.
+	 - true
+
+10. hibernate.format_sql
+	 - Format the generated SQL  statement to make it more readable.	
+	 - true
+
+11. hibernate.hbm2ddl.auto
+	 - Possible values : create | update | validate | create-drop
+	 - create : create the schema, the data previously present in the schema is lost
+	 - update : update the schema with the given values. If schema is not present in the DB then 		   the schema is created.
+	 - validate : validate the schema. It makes no change in the DB. If schema is not present in 		   the DB then the schema is not created. It will throw an error.
+	 - create-drop : create the schema with destroying the data previously present. It also drop 		   the database schema when session factory is closed.
+

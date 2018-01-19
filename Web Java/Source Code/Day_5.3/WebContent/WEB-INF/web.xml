@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Day_5.3</display-name>
+  <welcome-file-list>
+    <welcome-file>Index.html</welcome-file>    
+  </welcome-file-list>
+  <context-param>
+  	<param-name>DRIVER</param-name>
+  	<param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>URL</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/dacdb</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>USER</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>PASSWORD</param-name>
+  	<param-value>manager</param-value>
+  </context-param>  
+  <servlet>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<servlet-class>pages.RegistrationServlet</servlet-class>
+  	<!-- <init-param>
+  		<param-name>DRIVER</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>URL</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/dacdb</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>USER</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>PASSWORD</param-name>
+  		<param-value>manager</param-value>
+  	</init-param> -->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>pages.LoginServlet</servlet-class>
+  	<!-- <init-param>
+  		<param-name>DRIVER</param-name>
+  		<param-value>com.mysql.jdbc.Driver</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>URL</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/dacdb</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>USER</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>PASSWORD</param-name>
+  		<param-value>manager</param-value>
+  	</init-param> -->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>DetailsServlet</servlet-name>
+  	<servlet-class>pages.DetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DetailsServlet</servlet-name>
+  	<url-pattern>/details</url-pattern>
+  </servlet-mapping>
+</web-app>

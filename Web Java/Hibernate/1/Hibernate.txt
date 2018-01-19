@@ -1,0 +1,24 @@
++ Persistence
+	- It is minor pillar of oops.
+	- It is the process of storing data on secondry storage.	
+	- We can achieve it using:
+		* File
+		* Database
+
+
++ Limitations of JDBC:
+	- In JDBC, you can only pass parameters to Statements using indexing, that start from 1.
+
+	- lack of support for transforming a ResultSet into a DTO/POJO
+
+	- too verbose for CRUD operations
+
+	- no application-level caching integration support
+
+	- lack of pessimistic and optimistic locking support
+
+
+
+
+
+
