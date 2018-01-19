@@ -1,0 +1,8 @@
+//#ifndef FUNC_H_
+//#define FUNC_H_
+
+int fact(int n);
+int combn(int n, int r);
+void pascal(int max);
+
+//#endif

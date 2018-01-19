@@ -1,0 +1,1 @@
+cmdline.o: ../cmdline.c

@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void sumpro1(int a, int b)
+{
+	int s = a + b;
+	int p = a * b;
+	printf("sum : %d, product : %d\n", s, p);
+}
+
+int s, p; // global variables
+void sumpro2(int a, int b)
+{
+	s = a + b;
+	p = a * b;
+}
+
+
+
+int main()
+{
+	int x = 10, y = 20, rs, rp;
+	sumpro1(x, y);
+
+	sumpro2(x, y);
+	printf("sum : %d, product : %d\n", s, p);
+	return 0;
+}
+
+
+
+

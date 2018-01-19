@@ -1,0 +1,14 @@
+/*
+ * func.h
+ *
+ *  Created on: 17-Aug-2017
+ *      Author: sunbeam
+ */
+
+#ifndef FUNC_H_
+#define FUNC_H_
+
+int fact(int n);
+int combn(int n, int r);
+
+#endif /* FUNC_H_ */

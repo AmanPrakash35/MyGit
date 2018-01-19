@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "fun.h"
+
+enum menu show_menu()
+{
+	enum menu choice;
+	printf("\n\n0. EXIT\n1. ADDITION\n2. SUBTRACTION\n3. MULTIPLICATION\n4. DIVISION\nEnter choice : ");
+	scanf("%d", &choice);
+	return choice;
+}
+void add(int a, int b);
+void subtract(int a, int b);
+void multiply(int a, int b);
+void divide(int a, int b);
+

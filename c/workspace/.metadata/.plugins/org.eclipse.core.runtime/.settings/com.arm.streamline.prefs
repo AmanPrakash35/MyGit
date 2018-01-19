@@ -1,0 +1,5 @@
+Streamline.Session=<?xml version\="1.0" encoding\="UTF-8"?>\n<session version\="1" call_stack_unwinding\="yes" parse_debug_info\="yes" high_resolution\="no" buffer_mode\="streaming" sample_rate\="normal" duration\="0" target_address\="" live_rate\="100">\n\t<energy_capture version\="1" type\="none">\n\t\t<channel id\="0" resistance\="20" power\="yes"/>\n\t</energy_capture>\n</session>\n
+analytics=[{"product"\:"streamline","streamline_s_host_locale"\:"en_IN","streamline_n_theme_hybrid_using"\:1,"streamline_s_host_architecture"\:"amd64","streamline_s_host_os_version"\:"4.10.0-19-generic","streamline_s_host_os"\:"Linux","streamline_s_eclipse_version"\:"3.108.1.v20160929-1045","streamline_s_toolkit"\:"ce","streamline_s_java_version"\:"1.8.0_131"}]
+analytics_transmitted=1503028800367
+auth_cache=<?xml version\="1.0" encoding\="UTF-8"?>\n<authentications>\n</authentications>
+eclipse.preferences.version=1

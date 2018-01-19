@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void sumpro1(int a, int b)
+{
+	int s = a + b;
+	int p = a * b;
+	printf("sum : %d, product : %d\n", s, p);
+}
+
+int main()
+{
+
+}
+
+

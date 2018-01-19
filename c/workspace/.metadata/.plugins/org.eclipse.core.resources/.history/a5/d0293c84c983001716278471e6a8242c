@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "fun.h"
+
+int main()
+{
+	enum menu ch;
+	ch = show_menu();
+	switch (ch)
+	{
+		case ADDITION:
+			break;
+		case SUBTRACTION:
+			break;
+		case MULTIPLICATION:
+			break;
+		case DIVISION:
+			break;
+	}
+	return 0;
+}
+
+

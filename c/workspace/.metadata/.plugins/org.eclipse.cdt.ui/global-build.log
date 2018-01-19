@@ -1,0 +1,1476 @@
+10:46:55 **** Build of configuration Debug for project function1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function1
+Invoking: GCC C Linker
+gcc  -o "function1"  ./main.o   
+Finished building target: function1
+ 
+10:47:16 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:8:2: error: expected ‘;’ before ‘b’
+subdir.mk:18: recipe for target 'main.o' failed
+  b = fact(a);
+  ^
+make: *** [main.o] Error 1
+10:47:36 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function1
+Invoking: GCC C Linker
+gcc  -o "function1"  ./main.o   
+Finished building target: function1
+ 
+10:48:34 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:40 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:54 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function1
+Invoking: GCC C Linker
+gcc  -o "function1"  ./main.o   
+Finished building target: function1
+ 
+10:49:57 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:40 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:40 **** Build of configuration Debug for project function2 ****
+make all 
+Building file: ../func.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"func.d" -MT"func.o" -o "func.o" "../func.c"
+Finished building: ../func.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function2
+Invoking: GCC C Linker
+gcc  -o "function2"  ./func.o ./main.o   
+Finished building target: function2
+ 
+10:57:44 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:44 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:59 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:03:07 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:03:07 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+Building file: ../func.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"func.d" -MT"func.o" -o "func.o" "../func.c"
+Finished building: ../func.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function2
+Invoking: GCC C Linker
+gcc  -o "function2"  ./func.o ./main.o   
+Finished building target: function2
+ 
+11:03:14 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:04:06 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:04:06 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+Building file: ../func.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"func.d" -MT"func.o" -o "func.o" "../func.c"
+Finished building: ../func.c
+ 
+Building target: function2
+Invoking: GCC C Linker
+gcc  -o "function2"  ./func.o ./main.o   
+Finished building target: function2
+ 
+11:04:09 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:58:38 **** Build of configuration Debug for project envvars ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: envvars
+Invoking: GCC C Linker
+gcc  -o "envvars"  ./main.o   
+Finished building target: envvars
+ 
+11:58:38 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:58:38 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+Building file: ../func.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"func.d" -MT"func.o" -o "func.o" "../func.c"
+Finished building: ../func.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function2
+Invoking: GCC C Linker
+gcc  -o "function2"  ./func.o ./main.o   
+Finished building target: function2
+ 
+11:58:48 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:23 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:23 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:23 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:23 **** Build of configuration Debug for project function3 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function3
+Invoking: GCC C Linker
+gcc  -o "function3"  ./main.o   
+Finished building target: function3
+ 
+12:04:30 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:07:50 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:07:50 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:07:50 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:07:50 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function3
+Invoking: GCC C Linker
+gcc  -o "function3"  ./main.o   
+Finished building target: function3
+ 
+12:07:54 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:41 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:41 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:41 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:41 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:32:2: warning: ‘rs’ is used uninitialized in this function [-Wuninitialized]
+  sumpro3(x, y, rs, rp);
+  ^~~~~~~~~~~~~~~~~~~~~
+../main.c:32:2: warning: ‘rp’ is used uninitialized in this function [-Wuninitialized]
+Finished building: ../main.c
+ 
+Building target: function3
+Invoking: GCC C Linker
+gcc  -o "function3"  ./main.o   
+Finished building target: function3
+ 
+12:23:48 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:40:09 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:40:10 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:40:10 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:40:10 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function3
+Invoking: GCC C Linker
+gcc  -o "function3"  ./main.o   
+Finished building target: function3
+ 
+12:40:11 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:29:40 **** Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+09:29:41 **** Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:29:41 **** Build of configuration Debug for project function2 ****
+make all 
+Building file: ../func.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"func.d" -MT"func.o" -o "func.o" "../func.c"
+Finished building: ../func.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: function2
+Invoking: GCC C Linker
+gcc  -o "function2"  ./func.o ./main.o   
+Finished building target: function2
+ 
+09:29:42 **** Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:29:42 **** Build of configuration Debug for project menu1 ****
+make all 
+Building file: ../fun.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun.d" -MT"fun.o" -o "fun.o" "../fun.c"
+../fun.c: In function ‘show_menu’:
+../fun.c:8:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘enum menu *’ [-Wformat=]
+  scanf("%d", &choice);
+          ^
+Finished building: ../fun.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:9:2: warning: enumeration value ‘EXIT’ not handled in switch [-Wswitch]
+  switch (ch)
+  ^~~~~~
+Finished building: ../main.c
+ 
+Building target: menu1
+Invoking: GCC C Linker
+gcc  -o "menu1"  ./fun.o ./main.o   
+Finished building target: menu1
+ 
+09:29:54 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:46 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:46 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:47 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:47 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:47 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: menu1
+Invoking: GCC C Linker
+gcc  -o "menu1"  ./fun.o ./main.o   
+Finished building target: menu1
+ 
+09:31:50 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:35:02 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+09:35:02 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:35:02 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:35:02 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:35:02 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: menu1
+Invoking: GCC C Linker
+gcc  -o "menu1"  ./fun.o ./main.o   
+Finished building target: menu1
+ 
+09:35:02 **** Build of configuration Debug for project menu2 ****
+make all 
+Building file: ../fun.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun.d" -MT"fun.o" -o "fun.o" "../fun.c"
+../fun.c: In function ‘show_menu’:
+../fun.c:8:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘enum menu *’ [-Wformat=]
+  scanf("%d", &choice);
+          ^
+Finished building: ../fun.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: menu2
+Invoking: GCC C Linker
+gcc  -o "menu2"  ./fun.o ./main.o   
+Finished building target: menu2
+ 
+09:35:09 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:34 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:34 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:34 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:34 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:35 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:45:35 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+Building file: ../fun.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun.d" -MT"fun.o" -o "fun.o" "../fun.c"
+../fun.c: In function ‘show_menu’:
+../fun.c:8:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘menu_t * {aka enum <anonymous> *}’ [-Wformat=]
+  scanf("%d", &choice);
+          ^
+Finished building: ../fun.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: menu2
+Invoking: GCC C Linker
+gcc  -o "menu2"  ./fun.o ./main.o   
+Finished building target: menu2
+ 
+09:47:17 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:17 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:17 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:17 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:17 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:47:17 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+Building file: ../fun.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun.d" -MT"fun.o" -o "fun.o" "../fun.c"
+Finished building: ../fun.c
+ 
+Building target: menu2
+Invoking: GCC C Linker
+gcc  -o "menu2"  ./fun.o ./main.o   
+Finished building target: menu2
+ 
+09:50:18 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+09:50:18 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:50:19 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+09:50:19 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:50:19 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+09:50:19 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: menu2
+Invoking: GCC C Linker
+gcc  -o "menu2"  ./fun.o ./main.o   
+Finished building target: menu2
+ 
+10:10:15 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:16 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:16 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:16 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:16 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:16 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+Building file: ../fun.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"fun.d" -MT"fun.o" -o "fun.o" "../fun.c"
+Finished building: ../fun.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: menu2
+Invoking: GCC C Linker
+gcc  -o "menu2"  ./fun.o ./main.o   
+Finished building target: menu2
+ 
+10:10:19 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:15 **** Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+11:41:15 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:15 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:15 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:15 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:15 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:16 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:41:25 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:43:36 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:7:6: warning: unused variable ‘a’ [-Wunused-variable]
+  int a[] = {};
+      ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+11:43:36 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+11:43:36 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:43:36 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:43:37 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+11:43:37 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:43:37 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:03 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:9:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("%d\n", sizeof(a));
+           ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+11:44:03 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:04 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:04 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:04 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:04 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:04 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:44:18 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:37 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:06:38 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:38 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:38 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:38 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:38 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:38 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:06:40 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:34 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:08:34 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:34 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:34 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:34 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:35 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:35 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:36 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:13 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:09:13 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:13 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:13 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:13 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:14 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:14 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:15 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:19 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:11:19 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:19 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:19 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:19 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:19 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:19 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:22 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:22 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:22 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:22 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:23 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:23 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:23 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:24 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:09 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:12:09 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:09 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:09 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:10 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:10 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:10 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:40 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:12:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:13:40 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:40 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:40 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:40 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:40 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:41 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:13:45 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:49 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:12:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c:42:5: error: lvalue required as increment operand
+  arr++;
+     ^~
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+12:15:49 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:49 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:49 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:49 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:49 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:49 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:49 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:12:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:17:49 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:49 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:49 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:49 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:49 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:50 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:20 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:12:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:21:21 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:21 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:21 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:21 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:21 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:21 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:55 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:12:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:51:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:47:20: note: declared here
+ void print_arr(int a[], int n)
+                    ^
+../main.c:51:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:21:55 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:55 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:55 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:55 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:56 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:56 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:22:04 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:26 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:14:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:52:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:48:20: note: declared here
+ void print_arr(int a[], int n)
+                    ^
+../main.c:52:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:32:26 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:26 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:27 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:27 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:27 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:27 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:46 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:14:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:52:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:48:20: note: declared here
+ void print_arr(int a[], int n)
+                    ^
+../main.c:52:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:39:46 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:46 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:46 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:46 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:46 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:39:46 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:16 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:17 **** Build of configuration Debug for project array2 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:7:18: warning: missing braces around initializer [-Wmissing-braces]
+  int arr[3][4] = {11, 22, 33, 44, 55, 66, 77, 88, 99};
+                  ^
+../main.c:7:18: note: (near initialization for ‘arr’)
+Finished building: ../main.c
+ 
+Building target: array2
+Invoking: GCC C Linker
+gcc  -o "array2"  ./main.o   
+Finished building target: array2
+ 
+12:49:17 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:17 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:17 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:17 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:17 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:17 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:23 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:13 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:14:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:52:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:48:20: note: declared here
+ void print_arr(int a[5], int n)
+                    ^
+../main.c:52:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:51:13 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:13 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:13 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:13 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:13 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:13 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:14 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:16 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:14:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:52:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:48:20: note: declared here
+ void print_arr(int a[2], int n)
+                    ^
+../main.c:52:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:51:16 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:16 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:16 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:16 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:17 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:17 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:17 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:20 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:14:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:52:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:48:20: note: declared here
+ void print_arr(int a[20], int n)
+                    ^
+../main.c:52:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+12:51:20 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:20 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:20 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:20 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:20 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:20 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:51:21 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:00 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:13:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(arr) : %u\n", sizeof(arr));
+                         ^
+../main.c:14:25: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(ptr) : %u\n", sizeof(ptr));
+                         ^
+../main.c: In function ‘print_arr’:
+../main.c:52:35: warning: ‘sizeof’ on array function parameter ‘a’ will return size of ‘int *’ [-Wsizeof-array-argument]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                                   ^
+../main.c:48:20: note: declared here
+ void print_arr(int a[], int n)
+                    ^
+../main.c:52:23: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(a) : %u\n", sizeof(a));
+                       ^
+Finished building: ../main.c
+ 
+Building target: array1
+Invoking: GCC C Linker
+gcc  -o "array1"  ./main.o   
+Finished building target: array1
+ 
+13:22:00 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:7:18: warning: missing braces around initializer [-Wmissing-braces]
+  int arr[3][4] = {11, 22, 33, 44, 55, 66, 77, 88, 99, 10, 20, 30};
+                  ^
+../main.c:7:18: note: (near initialization for ‘arr’)
+../main.c:13:21: error: ‘i’ undeclared (first use in this function)
+  printf("%d\n", ptr[i][j]);
+                     ^
+../main.c:13:21: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:13:24: error: ‘j’ undeclared (first use in this function)
+  printf("%d\n", ptr[i][j]);
+                        ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+13:22:00 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:00 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:00 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:00 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:00 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:00 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:08 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:08 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:7:18: warning: missing braces around initializer [-Wmissing-braces]
+  int arr[3][4] = {11, 22, 33, 44, 55, 66, 77, 88, 99, 10, 20, 30};
+                  ^
+../main.c:7:18: note: (near initialization for ‘arr’)
+Finished building: ../main.c
+ 
+Building target: array2
+Invoking: GCC C Linker
+gcc  -o "array2"  ./main.o   
+Finished building target: array2
+ 
+13:22:08 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:08 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:08 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:08 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:09 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:09 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:10 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:39 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:39 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:7:18: warning: missing braces around initializer [-Wmissing-braces]
+  int arr[3][4] = {11, 22, 33, 44, 55, 66, 77, 88, 99, 10, 20, 30};
+                  ^
+../main.c:7:18: note: (near initialization for ‘arr’)
+Finished building: ../main.c
+ 
+Building target: array2
+Invoking: GCC C Linker
+gcc  -o "array2"  ./main.o   
+Finished building target: array2
+ 
+13:22:40 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:40 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:40 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:40 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:40 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:40 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:42 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project array1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:7:18: warning: missing braces around initializer [-Wmissing-braces]
+  int arr[3][4] = {11, 22, 33, 44, 55, 66, 77, 88, 99, 10, 20, 30};
+                  ^
+../main.c:7:18: note: (near initialization for ‘arr’)
+Finished building: ../main.c
+ 
+Building target: array2
+Invoking: GCC C Linker
+gcc  -o "array2"  ./main.o   
+Finished building target: array2
+ 
+13:22:51 **** Incremental Build of configuration Debug for project envvars ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project function1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project function2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project function3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project menu1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:51 **** Incremental Build of configuration Debug for project menu2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:54 **** Incremental Build of configuration Debug for project array2 ****
+make all 
+make: Nothing to be done for 'all'.

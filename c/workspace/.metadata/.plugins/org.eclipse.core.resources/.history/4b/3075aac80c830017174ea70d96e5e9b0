@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include "func.h"
+
+int main()
+{
+	int res;
+	res = combn(5, 2);
+	printf("%d\n", res);
+	return 0;
+}
+
+
+

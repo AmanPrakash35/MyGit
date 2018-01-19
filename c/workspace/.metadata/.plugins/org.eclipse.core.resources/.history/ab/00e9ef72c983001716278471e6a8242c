@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "fun.h"
+
+int main()
+{
+	enum menu ch;
+	ch = show_menu();
+	return 0;
+}
+
+

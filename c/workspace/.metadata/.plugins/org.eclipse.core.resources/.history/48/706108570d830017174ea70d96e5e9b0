@@ -1,0 +1,43 @@
+/*
+ * func.c
+ *
+ *  Created on: 17-Aug-2017
+ *      Author: sunbeam
+ */
+
+
+int fact(int n)
+{
+	int i, r=1;
+	for (i = 1; i <= n; ++i)
+		r = r * i;
+	return r;
+}
+
+int combn(int n, int r)
+{
+	int nf, rf, nrf, res;
+	nf = fact(n);
+	rf = fact(r);
+	nrf = fact(n-r);
+	res = nf / (rf * nrf);
+	return res;
+}
+
+void pascal(int max)
+{
+	int n, r, res;
+	for(n=1; n<=max; n++)
+	{
+		for(r=1; r<=n; r++)
+		{
+			res = combn(n, r);
+			printf("%d\t", res);
+		}
+		printf("\n");
+	}
+}
+
+
+
+

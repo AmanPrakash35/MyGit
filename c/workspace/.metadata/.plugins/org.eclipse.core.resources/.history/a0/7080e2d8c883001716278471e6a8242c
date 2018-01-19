@@ -1,0 +1,10 @@
+#ifndef FUN_H_
+#define FUN_H_
+
+enum menu
+{
+	EXIT, ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION
+};
+
+enum menu show_menu();
+#endif /* FUN_H_ */

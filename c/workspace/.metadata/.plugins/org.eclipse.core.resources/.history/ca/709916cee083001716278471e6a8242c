@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+void print_arr(int a[], int n);
+
+int main()
+{
+	int arr[5] = {11, 22, 33, 44};
+	int i, *ptr;
+	//ptr = &arr[0];
+	ptr = arr;
+
+	printf("sizeof(arr) : %u\n", sizeof(arr));
+	printf("sizeof(ptr) : %u\n", sizeof(ptr));
+
+	printf("arr[i] : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", arr[i]);
+	printf("*(arr+i) : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", *(arr+i));
+	printf("*(i+arr) : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", *(i+arr));
+	printf("i[arr] : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", i[arr]);
+
+	printf("*(ptr+i) : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", *(ptr+i));
+	printf("*(i+ptr) : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", *(i+ptr));
+	printf("ptr[i] : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", ptr[i]);
+	printf("i[ptr] : \n");
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", i[ptr]);
+	ptr++;
+//	print_arr(arr, 5);
+	return 0;
+}
+
+void print_arr(int a[], int n)
+{
+	int i;
+	for (i = 0; i < n; ++i)
+		printf("%d\n", a[i]);
+}
+

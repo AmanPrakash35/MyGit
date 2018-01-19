@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include "fun.h"
+
+int main()
+{
+	int ch;
+	int a, b;
+	mathfn_t ptr;
+	do
+	{
+		ptr = NULL;
+		ch = show_menu();
+		switch (ch)
+		{
+		case EXIT:
+			printf("good bye!\n");
+			break;
+		case ADDITION:
+			ptr = add;
+			break;
+		case SUBTRACTION:
+			ptr = subtract;
+			break;
+		case MULTIPLICATION:
+			ptr = multiply;
+			break;
+		case DIVISION:
+			ptr = divide;
+			break;
+		}
+		if(ptr != NULL)
+		{
+			printf("enter two numbers : ");
+			scanf("%d%d", &a, &b);
+			ptr(a, b);
+		}
+	}while(ch!=EXIT);
+	return 0;
+}
+
+

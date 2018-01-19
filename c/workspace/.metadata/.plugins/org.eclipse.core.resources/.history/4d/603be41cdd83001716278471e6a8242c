@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void print_arr(int a[], int n);
+
+int main()
+{
+	int arr[5] = {11, 22, 33, 44};
+	int *ptr;
+
+
+
+
+//	print_arr(arr, 5);
+	return 0;
+}
+
+void print_arr(int a[], int n)
+{
+	int i;
+	for (i = 0; i < n; ++i)
+		printf("%d\n", a[i]);
+}
+
